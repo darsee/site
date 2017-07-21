@@ -6,7 +6,7 @@
     "install": "gem install github-pages",
     "start": "jekyll server -w",
     "start-drafts": "jekyll server -w --drafts",
-    "deploy": "surge -p _site"
+    "deploy": "jekyll build && surge -p _site"
   },
   "repository": {
     "type": "git",
