@@ -1,8 +1,8 @@
-title:            "muan.co"
-url:              http://muan.co
+title:            "seamusdarcy.com"
+url:              http://www.seamusdarcy.com
 permalink:        pretty
-google_analytics: UA-21332781-7
-timezone:         Asia/Taipei
+google_analytics: UA-102964801-1
+timezone:         Europe/Dublin
 sass:
   sass_dir: assets
   style: :compressed
