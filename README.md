@@ -4,13 +4,12 @@ This is my personal site.
 
 I've been meaning to do this for years, but never got around to it... I came across [muan.co](http://muan.co), which was so nice that it compelled me into action, so this is forked from https://github.com/muan/site.
 
-## Compile
+## Scripts
 
-```bash
-$ gem install github-pages
-# add --drafts to see posts from /_drafts
-$ jekyll server -w --baseurl=''
-```
+* `npm install`: Install github-pages
+* `npm start`: Run the jekyll server
+* `npm run start-drafts`: Include posts in the '_drafts' folder
+* `npm run deploy`: Deploy the site to seamusdarcy.com
 
 ## License
 
