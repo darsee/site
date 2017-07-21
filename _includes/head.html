@@ -9,9 +9,6 @@
   <meta content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}" property='og:description' />
   <meta content="article" property="og:type" />
   <meta content='{{ page.title }} - {{ site.title }}' property='og:title' />
-  {% if page.image %}
-    <meta content="http://muan.co/images/{{ page.image }}" property="og:image" />
-  {% endif %}
   <title>{{ page.title }} - {{ site.title }}</title>
 {% else %}
   <title>{{ site.title }}</title>
