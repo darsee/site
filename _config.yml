@@ -6,6 +6,6 @@ timezone:         Europe/Dublin
 sass:
   sass_dir: assets
   style: :compressed
-gems:
+plugins:
   - jemoji
 

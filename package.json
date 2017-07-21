@@ -1,0 +1,15 @@
+{
+  "name": "seamusdarcy.com",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "install": "gem install github-pages",
+    "start": "jekyll server -w",
+    "start-drafts": "jekyll server -w --drafts",
+    "deploy": "surge -p _site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darsee/site.git"
+  }
+}
