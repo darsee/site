@@ -1,53 +1,14 @@
 ---
-modes:
-  light:
-    foreground: "#353735"
-    background: "#fdfdfd"
-    link_foreground: "#070c10"
-    mark_background: "#efefef"
-  dark:
-    foreground: "#fdfdfd"
-    background: "#1b1b1b"
-    link_foreground: "#fafff7"
-    mark_background: "#303030"
 ---
 
-.dark-mode {
-  color: {{ page.modes.dark.foreground }};
-  background: {{ page.modes.dark.background }};
-
-  mark {
-    color: {{ page.modes.dark.foreground }};
-    background: {{ page.modes.dark.mark_background }};
-  }
-
-  a {
-    color: {{ page.modes.dark.link_foreground }};
-
-    &:hover {
-      background: {{ page.modes.dark.foreground }};
-      color: {{ page.modes.dark.background }};
-    }
-  }
-
-  button {
-    background-color: {{ page.modes.dark.foreground }};
-    color: {{ page.modes.dark.background }};
-    border: 0;
-  }
-
-  .highlight {
-    background-color: {{ page.modes.dark.foreground}};
-  }
-
-  code, pre {
-    color: {{ page.modes.dark.background }}
-  }
-}
+$foreground: #353735;
+$background: #fdfdfd;
+$link-foreground: #070c10;
+$mark-background: #efefef;
 
 body {
-  background: {{ page.modes.light.background }};
-  color: {{ page.modes.light.foreground }};
+  background: $background;
+  color: $foreground;
   padding: 1em;
   line-height: 1.8em;
   font-family: 'Droid Sans Mono', monospace;
@@ -73,7 +34,6 @@ h2 {
 
 p {
   margin-bottom: 1.5em;
-  margin-bottom: 1.5em;
 }
 
 .pagination {
@@ -81,23 +41,28 @@ p {
 }
 
 a {
-  color: {{ page.modes.light.link_foreground }};
+  color: $link-foreground;
 
   &:hover {
     text-decoration: none;
-    background: {{ page.modes.light.foreground }};
-    color: {{ page.modes.light.background }};
+    background: $foreground;
+    color: $background;
   }
 }
 
 mark {
-  color: {{ page.modes.light.foreground }};
-  background-color: {{ page.modes.light.mark_background }};
+  color: $foreground;
+  background-color: $mark-background;
 
-  a { text-decoration: none; padding: 0 0.3em; }
+  a { text-decoration: none; padding: 0 .3em; }
 }
 
-div, a, img, header, footer, main {
+div,
+a,
+img,
+header,
+footer,
+main {
   box-sizing: border-box;
 }
 
@@ -132,7 +97,7 @@ article img:not(.emoji) {
 }
 
 .list {
-  margin-top: 0.8em;
+  margin-top: .8em;
   padding-left: 1.5em;
   list-style: none;
 }
@@ -141,7 +106,7 @@ li {
   padding: 0;
   margin-bottom: 15px;
 
-  &:before {
+  &::before {
     content: '•';
     position: absolute;
     margin-left: -1.5em;
@@ -159,7 +124,7 @@ hr {
 }
 
 blockquote {
-  margin: 40px 0px;
+  margin: 40px 0;
   padding: 0 1em;
   border-left: 4px double;
 
@@ -168,8 +133,8 @@ blockquote {
 }
 
 button {
-  background-color: {{ page.modes.light.foreground }};
-  color: {{ page.modes.light.background }};
+  background-color: $foreground;
+  color: $background;
   border: 0;
 }
 
