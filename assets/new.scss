@@ -9,7 +9,7 @@ $mark-background: #efefef;
 body {
   background: $background;
   color: $foreground;
-  padding: 1em;
+  padding: .5em;
   line-height: 1.8em;
   font-family: 'Droid Sans Mono', monospace;
   font-size: 13px;
@@ -78,8 +78,8 @@ main {
 
 .footer,
 .header {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .post-header {
